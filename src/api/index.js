@@ -1,4 +1,4 @@
-export const entryPoint = 'http://shakespeare.podium.co'
+const entryPoint = 'http://shakespeare.podium.co'
 const token = 'koOheljmQX'
 
 export default async function (url = '', headers = { method: 'GET' }) {

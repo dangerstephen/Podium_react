@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fetch from './api/index.js'
+import Fetch from './api/index.js';
 import Reviews from './reviews/index.js';
 import NavBar from './navbar/index.js';
 import './App.css';
@@ -13,14 +13,12 @@ class App extends Component {
     }
   }
 
-  componentWillMount = async () => {
+  componentDidMount = async () => {
       const { data } = await Fetch('/api/reviews');
       this.setState({
         reviews: data
       });
   }
-
-
 
   render() {
     return (

@@ -7,12 +7,8 @@ class Reviews extends Component {
   render() {
     if(this.props.reviews === null){
       return (
-        <div className="Card">
-  <div className="provider"><i className="card-social__icon fa fa-search"></i></div>
-  <div className="details">
-  <h1>Searching For Posts...</h1>
-  </div>
-  <div className="count"></div>
+        <div className="card">
+  <h1>Attempting to find posts...</h1>
       </div>
       );
     } else {

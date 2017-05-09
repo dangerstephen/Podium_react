@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fetch from '../api/index.js'
 import Time from 'react-time-format';
 import StarRatingComponent from 'react-star-rating-component';
 import '../App.css';
@@ -10,7 +11,6 @@ class Review extends Component {
     super(props);
     this.state = this.props.review;
   }
-
 
 
   render() {
