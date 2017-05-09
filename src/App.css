@@ -1,10 +1,23 @@
+body {
+  background: rgba(10,33,56,.8);
+  font-family: 'Proxima Nova', serif;
+  height: 100%;
+  width: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #034378;
-    height: 100vh;
+.navbar {
+    height: 100px;
+    width: 100%;
+}
+
+.navbar img {
+    margin-left: 10%;
+    height: 80px;
+    width: 200px;
 }
 
 a {
