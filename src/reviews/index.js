@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Review from '../review/index.js';
-import '../App.css';
+import '../styles/App.css';
 
 class Reviews extends Component {
-
   render() {
     if(this.props.reviews === null){
       return (
@@ -21,7 +20,6 @@ class Reviews extends Component {
       );
     }
   }
-
 }
 
 export default Reviews;

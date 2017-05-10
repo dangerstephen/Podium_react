@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Fetch from './api/index.js';
 import Reviews from './reviews/index.js';
 import NavBar from './navbar/index.js';
-import './App.css';
+import './styles/App.css';
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-      const { data } = await Fetch('/api/reviews/');
+      const { data } = await Fetch('http://shakespeare.podium.co/api/reviews/');
       this.setState({
         reviews: data
       });
