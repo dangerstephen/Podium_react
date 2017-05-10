@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-      const { data } = await Fetch('/api/reviews');
+      const { data } = await Fetch('/api/reviews/');
       this.setState({
         reviews: data
       });
