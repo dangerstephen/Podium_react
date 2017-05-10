@@ -7,11 +7,11 @@ Shakespeare has been getting a lot of reviews recently about his plays. So far h
 Two endpoints exist for this API.
 
 Reviews Index
-GET shakespeare.podium.co/api/reviews
+GET https://shakespeare.podium.co/api/reviews
 Response looks like the following https://gist.github.com/telnicky/88e98de5a165037f81fa72694d410a35
 
 Reviews Show
-GET shakespeare.podium.co/api/reviews/:id
+GET https://shakespeare.podium.co/api/reviews/:id
 Response looks like the following https://gist.github.com/telnicky/231df61e401cb6aa2279cb2adfa05c5a
 
 To get Authorized for using the API you must base your token into the Authorization header. 
@@ -45,7 +45,7 @@ npm test
 
 ## How it works
 
-The app sends a GET request to shakespeare.podium.co/api/reviews and grabs the array of reviews. The array of reviews is then iterated over and cards with important information are created for each review. When you mouse over each card the shakespeare.podium.co/api/reviews/:id route is hit updating the array to show the body of that review.
+The app sends a GET request to https://shakespeare.podium.co/api/reviews and grabs the array of reviews. The array of reviews is then iterated over and cards with important information are created for each review. When you mouse over each card the https://shakespeare.podium.co/api/reviews/:id route is hit updating the array to show the body of that review.
 
 
 Cards Prior to the mouse over look like this:
